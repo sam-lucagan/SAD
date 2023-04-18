@@ -1,0 +1,124 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<div style="height: 100vh">
+  <mat-sidenav-container style="height: 100%">
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-drawer-container class="example-container bg-white shadow" autosize>
+      <mat-drawer
+        #drawer
+        class="example-sidenav p-3"
+        mode="side"
+        opened="false"
+      >
+        <div class="mt-5 text-dark">
+          <div class="user-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                ><i class="fa fa-file-o" aria-hidden="true"></i> Labor Report</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                ><i class="fa fa-file-o" aria-hidden="true"></i> Labor Report</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                ><i class="fa fa-file-o" aria-hidden="true"></i> Labor Report</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                ><i class="fa fa-file-o" aria-hidden="true"></i> Labor Report</a
+              >
+            </li>
+          </ul>
+        </div>
+      </mat-drawer>
+      <div class="container-fluid mt-4">
+        <div class="card">
+          <div class="card-body">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>DTR</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <button class="btn"><i class="fa fa-eye"></i> VIEW</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>
+                    <button class="btn"><i class="fa fa-eye"></i> VIEW</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- <ng-template #confirmModal let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="confirm">Confirmation</h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-warning">
+            <h4>Your are deleting <b></b></h4>
+            <h4>Are you Sure?</h4>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            (click)="modal.close('1')"
+          >
+            Ok
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            (click)="modal.close('0')"
+          >
+            Cancel
+          </button>
+        </div>
+      </ng-template> -->
+    </mat-drawer-container>
+  </mat-sidenav-container>
+</div>
